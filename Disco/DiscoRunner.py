@@ -59,13 +59,13 @@ def getSCJounalScenario():
 
 def runDiscoWithJournal():
     proc = subprocess.check_call(
-        '"' + scdminstall + '"' + " /RunApollo=true /UseSubscription=true" + " /J=" + scjournalpath + " /EXITAFTERJOURNAL=true",
+        '"' + disco_install + '"' + " /J=" + scjournalpath + " /EXITAFTERJOURNAL=true",
         shell=True)
 
 
 def runDiscoWithScript():
     proc = subprocess.check_call(
-        '"' + scdminstall + '"' + " /RunApollo=true /UseSubscription=true" + " /RunScript=" + scjournalpath + " /ExitAfterScript=true",
+        '"' + disco_install + '"' + " /RunScript=" + scjournalpath + " /ExitAfterScript=true",
         shell=True)
 
 
